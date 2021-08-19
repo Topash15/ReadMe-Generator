@@ -25,7 +25,7 @@
   
   Navigate to the application fold in the command line and type 'node index.js'. Answer the questions accordingly.
 
-  [Walkthrough Video](https://drive.google.com/file/d/1XkVAbsmwbbYDhHnmWnYE-lJjowMmXMvP/preview)
+  [Walkthrough Video](https://drive.google.com/file/d/1XkVAbsmwbbYDhHnmWnYE-lJjowMmXMvP/view)
   
   
   ## License
