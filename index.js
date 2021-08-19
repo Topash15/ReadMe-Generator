@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js')
+const generateMarkdown = require('./assets/js/utils/generateMarkdown.js')
 
 
 // TODO: Create an array of questions for user input
@@ -161,12 +161,6 @@ const questions = [
     }
 ];
 
-// WHEN I am prompted for information about my application repository
-// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-// WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-
-
 // TODO: Create a function to write README file
 function writeToFile(filename, data) {
 
@@ -176,21 +170,17 @@ function writeToFile(filename, data) {
     })
 }
 
-// writeToFile("../../test.txt", "test")
-
 
 // TODO: Create a function to initialize app
 function init() {
     
     inquirer.prompt(questions)
     .then(function(answers){
-        console.log(answers)
-        // const {title, description, installation, usage, contributing, tests, license, communitySpecificLicense, github, email} = answers;
         template = generateMarkdown(answers)
         return template
     })
     .then(function(template){
-        writeToFile("../../readme1.md", template);
+        writeToFile("readmeOutput.md", template);
     })
 }
 
