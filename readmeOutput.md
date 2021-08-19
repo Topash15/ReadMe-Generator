@@ -1,11 +1,11 @@
 
-  # ReadMe Generator
+  # Title
 
-  ![ReadMe Generator](https://img.shields.io/badge/License-GNU_GPLv3-brightgreen)
+  ![Title](https://img.shields.io/badge/License-Apache-brightgreen)
 
   ## Description 
   
-  It helps you to create a readme file by asking a series of questions.
+  Description
   
   ## Table of Contents
   
@@ -19,28 +19,28 @@
   
   ## Installation
   
-  Install Node.js
+  Steps to install here
   
   ## Usage 
   
-  In the command line, type 'node index.js'
+  Steps to run here
   
   
   ## License
 
-  [GNU_GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+  [Apache](https://www.apache.org/licenses/LICENSE-2.0.html)
     
 
   ## Contributing
   
-  Be my guest
+  Here are the guidelines
   
   ## Tests
   
-  There are no tests for this application.
+  Here are the tests
   
   ## Questions?
   
   [Reach me on Github](https://github.com/Topash15)
   
-  <Alextopash@gmail.com>
+  <email@email.com>

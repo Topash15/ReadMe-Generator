@@ -26,7 +26,6 @@ function renderLicenseBadge(license, communitySpecificLicense) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license, communitySpecificLicense, communitySpecificLicenseLink) {
-  console.log(communitySpecificLicense)
   let licenseLink = ''
 
   if (license === 'MIT License (lets people do almost anything they want with your project, like making and distributing closed source versions.)'){
@@ -66,7 +65,6 @@ function generateMarkdown(data) {
   const {title, description, installation, usage, contributing, tests, license, communitySpecificLicense, communitySpecificLicenseLink, github, email} = data;
   let badge = renderLicenseBadge(license, communitySpecificLicense);
   let licenseSection = renderLicenseSection(license, communitySpecificLicense, communitySpecificLicenseLink);
-  console.log(licenseSection)
 
   let template = `
   # ${title}
