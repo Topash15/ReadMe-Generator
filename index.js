@@ -95,7 +95,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license does your project have?',
-        choices: [{name: 'Community-specific license', value: 'CSL'}, {name: 'MIT License (lets people do almost anything they want with your project, like making and distributing closed source versions.)', value: 'MIT'}, {name: 'GNU GPLv3 (lets people do almost anything they want with your project, except distributing closed source versions.)', value: 'GNU GPLv3'}]
+        choices: [{name: 'Community-specific license', value: 'CSL'}, {name: 'MIT License (lets people do almost anything they want with your project, like making and distributing closed source versions.)', value: 'MIT'}, {name: 'GNU GPLv3 (lets people do almost anything they want with your project, except distributing closed source versions.)', value: 'GNU_GPLv3'}]
     },
     //License community specific license
     {
