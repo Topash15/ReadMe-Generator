@@ -2,23 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license, communitySpecificLicense) {
 
-
-  let licenseName = ''
-
-  //sets license name based upon choice
-  if (license === 'MIT License (lets people do almost anything they want with your project, like making and distributing closed source versions.)'){
-    licenseName = "MIT";
-  } else if (license === 'GNU GPLv3 (lets people do almost anything they want with your project, except distributing closed source versions.)'){
-    licenseName = "GNU_GPLv3"
-  } else {
-    licenseName = communitySpecificLicense
-  }
-
   // checks for license and creates badge link if license is specified
   if (!license){
     return ''
   } else {
-    let badge = `https://img.shields.io/badge/License-${licenseName}-brightgreen`
+    let badge = `https://img.shields.io/badge/License-${license}-brightgreen`
     return badge
   }
 }
@@ -62,8 +50,10 @@ function renderLicenseSection(license, communitySpecificLicense, communitySpecif
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {   
+  console.log(data);
   const {title, description, installation, usage, contributing, tests, license, communitySpecificLicense, communitySpecificLicenseLink, github, email} = data;
   let badge = renderLicenseBadge(license, communitySpecificLicense);
+  console.log(badge);
   let licenseSection = renderLicenseSection(license, communitySpecificLicense, communitySpecificLicenseLink);
 
   let template = `
